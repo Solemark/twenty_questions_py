@@ -1,6 +1,6 @@
-from character import Character
-from question import Question, FType, QType
-from stub import CList, QList
+from src.character import Character
+from src.question import Question, FType, QType
+from src.stub import CList, QList
 
 
 def get_data() -> tuple[CList, QList]:

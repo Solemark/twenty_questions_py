@@ -1,7 +1,7 @@
 from typing import TypeAlias
 
-from character import Character
-from question import Question
+from src.character import Character
+from src.question import Question
 
 
 CList: TypeAlias = list[Character]

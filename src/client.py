@@ -1,7 +1,7 @@
 from random import randint
 
-from data_loader import get_data
-from stub import CList, QList, AList, Ch, Qu
+from src.data_loader import get_data
+from src.stub import CList, QList, AList, Ch, Qu
 
 
 def main() -> None:
@@ -45,7 +45,3 @@ def __guess(CL: CList, char: Ch, i: int = 1) -> Ch:
     if CL[i].get_weighting() > char.get_weighting():
         return __guess(CL, CL[i], i + 1)
     return __guess(CL, char, i + 1)
-
-
-if __name__ == "__main__":
-    main()
